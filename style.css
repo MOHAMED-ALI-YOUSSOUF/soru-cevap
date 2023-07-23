@@ -1,6 +1,3 @@
-
-/* General */
-
 body{
     margin: 0;
     padding: 0;
@@ -31,32 +28,13 @@ table{
 table tbody tr:nth-child(odd){
     background: #e3dbdb;
 }
-
-
-
-/* 1. sayfa */
-
-
-
- .td-2{
-    display: none;
- }
- td:hover{
+td:hover{
     cursor: pointer;
-    font-size: 22px;
+    font-size: 18px;
     color: white;
     background: #777070;
  }
- td:hover +.td-2{
-    display: block;
-    background: #16e53c;
-    color: #3b3b3b;
-    font-size: 22px;
- }
 
-
- 
-/* 2. sayfa */
  .chk-mode{
     display: none;
 }
