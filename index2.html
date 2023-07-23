@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      
+        
+   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Seçiciler</h1>
+        <p>Cevabı görmek için lütfen göz iconu tıklayın </p>
+       
+       <table border="0">
+        <thead>
+            <tr>
+                
+                <td>Soru</td>
+                <td>Cevap</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td > Tüm elementler</td>
+                <td >
+                    <label for="chkMode" class="btn-mode"><i class="fa-solid fa-eye"></i></label>
+                    <input type="checkbox" id="chkMode" class="chk-mode" />
+                    <span>* {}</span>
+                </td>
+            </tr>
+            <tr>
+                <td >Sayfadaki tüm h2 ler</td>
+                <td >
+                    <label for="chkMode-2" class="btn-mode"><i class="fa-solid fa-eye"></i></label>
+                    <input type="checkbox" id="chkMode-2" class="chk-mode" /> 
+                    <span> h2 {}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Sayfadaki tüm section-header isimli elementler</td>
+                <td >
+                    <label for="chkMode-3" class="btn-mode"><i class="fa-solid fa-eye"></i></label>
+                    <input type="checkbox" id="chkMode-3" class="chk-mode" /> 
+                    <span >.section-header{}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Sayfadaki tüm section-header isimli elementlerin içindeki h2 ler</td>
+                <td >
+                    <label for="chkMode-4" class="btn-mode"><i class="fa-solid fa-eye"></i></label>
+                    <input type="checkbox" id="chkMode-4" class="chk-mode" /> 
+                    <span  >section-header h2{}</span>
+                </td>
+            </tr>
+            <tr>
+                <td> Body içindeki 3.section</td>
+                <td >
+                    <label for="chkMode-5" class="btn-mode"><i class="fa-solid fa-eye"></i></label>
+                    <input type="checkbox" id="chkMode-5" class="chk-mode" /> 
+                    <span  >body section:nth-child(3) {}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>top-bar ismindeki section içindeki img</td>
+                <td >
+                    <label for="chkMode-6" class="btn-mode"><i class="fa-solid fa-eye"></i></label>
+                    <input type="checkbox" id="chkMode-6" class="chk-mode" /> 
+                    <span >section.top-bar img {}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>top-bar içindeki nav içindeki linkler</td>
+                <td >
+                    <label for="chkMode-7" class="btn-mode"><i class="fa-solid fa-eye"></i></label>
+                    <input type="checkbox" id="chkMode-7" class="chk-mode" /> 
+                    <span >.top-bar nav a {}</span>
+                </td>
+            </tr>
+            <tr>
+                <td> parent i sosyal-medya olan linkler</td>
+                <td >
+                    <label for="chkMode-8" class="btn-mode"><i class="fa-solid fa-eye"></i></label>
+                    <input type="checkbox" id="chkMode-8" class="chk-mode" /> 
+                    <span > .sosyal-medya > a {}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>parent ı section olan nav ların içindeki li ler</td>
+                <td >
+                    <label for="chkMode-9" class="btn-mode"><i class="fa-solid fa-eye"></i></label>
+                    <input type="checkbox" id="chkMode-9" class="chk-mode" /> 
+                    <span >section > nav li {}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>top-bar dan sonraki section</td>
+                <td >
+                    <label for="chkMode-10" class="btn-mode"><i class="fa-solid fa-eye"></i></label>
+                    <input type="checkbox" id="chkMode-10" class="chk-mode" /> 
+                    <span >.top-bar + section {}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>parenti kutu olan img lerden sonraki span lar</td>
+                <td >
+                    <label for="chkMode-11" class="btn-mode"><i class="fa-solid fa-eye"></i></label>
+                    <input type="checkbox" id="chkMode-11" class="chk-mode" /> 
+                    <span  > .kutu > img ~ span {}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>top-bar içindeki nav içindeki ilk li den sonraki li ler</td>
+                <td >
+                    <label for="chkMode-12" class="btn-mode"><i class="fa-solid fa-eye"></i></label>
+                    <input type="checkbox" id="chkMode-12" class="chk-mode" /> 
+                    <span  >.top-bar nav li:first-child ~ li {}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>referanslar içindeki kutuların üzerine gelindiğinde img ler</td>
+                <td >
+                    <label for="chkMode-13" class="btn-mode"><i class="fa-solid fa-eye"></i></label>
+                    <input type="checkbox" id="chkMode-13" class="chk-mode" /> 
+                    <span  > .referanslar .kutu:hover img {}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>hizmetler içindeki parenti kutu olan h3 lerden önce içerik eklenecek</td>
+                <td >
+                    <label for="chkMode-14" class="btn-mode"><i class="fa-solid fa-eye"></i></label>
+                    <input type="checkbox" id="chkMode-14" class="chk-mode" /> 
+                    <span >.hizmetler .kutu:h3::before {}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>top-bar içinde 3. li nin üzerine geldiğinde a dan sonraya içerik eklenecek</td>
+                <td >
+                    <label for="chkMode-15" class="btn-mode"><i class="fa-solid fa-eye"></i></label>
+                    <input type="checkbox" id="chkMode-15" class="chk-mode" /> 
+                    <span > .top-bar li:nth-child(3):hover a::after{}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>top-bar içindeki ilk li nin üzerine geldiğnde, bu li den sonraki li içindeki a nın sonuna içerik eklenecek</td>
+                <td >
+                    <label for="chkMode-16" class="btn-mode"><i class="fa-solid fa-eye"></i></label>
+                    <input type="checkbox" id="chkMode-16" class="chk-mode" /> 
+                    <span > .top-bar li:first-child:hover + li a::after {}</span>
+                </td>
+            </tr>
+        </tbody>
+       </table>
+    </div>
+</body>
+</html>

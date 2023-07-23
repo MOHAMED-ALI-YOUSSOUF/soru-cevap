@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Seçiciler</h1>
+        <p>Cevabı görmek için lütfen sorunun üzerine gelin </p>
+        
+       <table border="1">
+        <thead>
+            <tr>
+                
+                <td>Soru</td>
+                <td class="td-2">Cevap</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td > Tüm elementler</td>
+                <td class="td-2"> * {}</td>
+            </tr>
+            <tr>
+                <td >Sayfadaki tüm h2 ler</td>
+                <td class="td-2">h2 {}</td>
+            </tr>
+            <tr>
+                <td>Sayfadaki tüm section-header isimli elementler</td>
+                <td class="td-2">.section-header{}</td>
+            </tr>
+            <tr>
+                <td>Sayfadaki tüm section-header isimli elementlerin içindeki h2 ler</td>
+                <td class="td-2">section-header h2{}</td>
+            </tr>
+            <tr>
+                <td> Body içindeki 3.section</td>
+                <td class="td-2">body section:nth-child(3) {}</td>
+            </tr>
+            <tr>
+                <td>top-bar ismindeki section içindeki img</td>
+                <td class="td-2">section.top-bar img {}</td>
+            </tr>
+            <tr>
+                <td>top-bar içindeki nav içindeki linkler</td>
+                <td class="td-2">.top-bar nav a {}</td>
+            </tr>
+            <tr>
+                <td> parent i sosyal-medya olan linkler</td>
+                <td class="td-2"> .sosyal-medya > a {}</td>
+            </tr>
+            <tr>
+                <td>parent ı section olan nav ların içindeki li ler</td>
+                <td class="td-2">section > nav li {}</td>
+            </tr>
+            <tr>
+                <td>top-bar dan sonraki section</td>
+                <td class="td-2">.top-bar + section {}</td>
+            </tr>
+            <tr>
+                <td>parenti kutu olan img lerden sonraki span lar</td>
+                <td class="td-2"> .kutu > img ~ span {}</td>
+            </tr>
+            <tr>
+                <td>top-bar içindeki nav içindeki ilk li den sonraki li ler</td>
+                <td class="td-2">.top-bar nav li:first-child ~ li {}</td>
+            </tr>
+            <tr>
+                <td>referanslar içindeki kutuların üzerine gelindiğinde img ler</td>
+                <td class="td-2"> .referanslar .kutu:hover img {}</td>
+            </tr>
+            <tr>
+                <td>hizmetler içindeki parenti kutu olan h3 lerden önce içerik eklenecek</td>
+                <td class="td-2">.hizmetler .kutu:h3::before {}</td>
+            </tr>
+            <tr>
+                <td>top-bar içinde 3. li nin üzerine geldiğinde a dan sonraya içerik eklenecek</td>
+                <td class="td-2"> .top-bar li:nth-child(3):hover a::after{}</td>
+            </tr>
+            <tr>
+                <td>top-bar içindeki ilk li nin üzerine geldiğnde, bu li den sonraki li içindeki a nın sonuna içerik eklenecek</td>
+                <td class="td-2"> .top-bar li:first-child:hover + li a::after {}</td>
+            </tr>
+        </tbody>
+       </table>
+    </div>
+</body>
+</html>
